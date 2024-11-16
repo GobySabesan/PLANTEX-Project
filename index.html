@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">PLAN<span>TEX</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#products" class="nav-item">Products</a></li>
+                <li><a href="#faqs" class="nav-item">FAQs</a></li>
+                <li><a href="#contact" class="nav-item">Contact Us</a></li>
+                <li><button id="darkModeToggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <div class="carousel-container">
+        <div class="carousel-slide" id="carouselSlide">
+            
+            <div class="carousel-item">
+                <div class="text-content">
+                    <h2>65% OFF</h2>
+                    <h1>NEW PLANT</h1>
+                    <p>Promise. With 100% Natural, Organic & Plant Shop.</p>
+                    <a href="#">Discover Now</a>
+                </div>
+                <img src="images/home.png" alt="Plant">
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <div class="about-section">
+        <div class="image-container">
+            <div class="image-overlay"></div>
+            <img src="images/about.png" alt="Plant Care" class="main-image">
+        </div>
+        <div class="text-content">
+            <h2>Who we really are & why choose us</h2>
+            <p>We have over 4000+ unbiased reviews and our customers trust our plant process and delivery service every time.</p>
+            <ul>
+                <li>We always deliver on time.</li>
+                <li>We give you guides to protect and care for your plants.</li>
+                <li>We always come over for a check-up after sale.</li>
+                <li>100% money back guaranteed.</li>
+            </ul>
+            <a href="#" class="shop-now">Shop Now &rarr;</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="gallery-container">
+        <h2>OUR PRODUCTS</h2>
+        
+        <div class="filter-buttons">
+            <button onclick="filterProducts('all')">Featured</button>
+            <button onclick="filterProducts('bestseller')">Bestseller</button>
+            <button onclick="filterProducts('latest')">Latest</button>
+        </div>
+        
+        <div class="product-gallery">
+            <div class="product" data-category="featured latest">
+                <img src="/images/product1.png" alt="American Marigold">
+                <div class="product-name">American Marigold</div>
+                <div class="price">$23.45</div>
+            </div>
+            
+            <div class="product" data-category="featured bestseller">
+                <img src="/images/product2.png" alt="Black Eyed Susan">
+                <div class="product-name">Black Eyed Susan</div>
+                <div class="price">$30.45</div>
+            </div>
+            
+            <div class="product" data-category="latest">
+                <img src="/images/product3.png" alt="Bleeding Heart">
+                <div class="product-name">Bleeding Heart</div>
+                <div class="price">$30.45</div>
+            </div>
+            
+            <div class="product" data-category="featured">
+                <img src="/images/product4.png" alt="Bloody Cranesbill">
+                <div class="product-name">Bloody Cranesbill</div>
+                <div class="price">$45.00</div>
+            </div>
+            
+            <div class="product" data-category="latest">
+                <img src="/images/product5.png" alt="Butterfly Weed">
+                <div class="product-name">Butterfly Weed</div>
+                <div class="price">$50.45</div>
+            </div>
+
+            <div class="product" data-category="latest">
+                <img src="/images/product6.png" alt="Butterfly Weed">
+                <div class="product-name">Tradescanita</div>
+                <div class="price">$60.00</div>
+            </div>
+            
+           
+            
+        </div>
+    </div> 
+
+
+    <div class="faq-container">
+        <h2>Some common questions were often asked</h2>
+        
+        <div class="faq-grid">
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="question">My flowers are falling off or dying?</div>
+                <div class="answer">This could be due to overwatering, underwatering, or lack of sunlight. Make sure to check the plant's specific care needs.</div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="question">What causes leaves to become pale?</div>
+                <div class="answer">Pale leaves often indicate a lack of nutrients or insufficient light. Try fertilizing and providing more sunlight.</div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="question">What causes brown crispy leaves?</div>
+                <div class="answer">Brown, crispy leaves can be a sign of low humidity or underwatering. Increase humidity or water the plant more frequently.</div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="question">How do I choose a plant?</div>
+                <div class="answer">Plants are an easy way to add color, energy, and transform your space, but choosing the right plant is key. Consider light, size, and maintenance requirements.</div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="question">How do I change the pots?</div>
+                <div class="answer">Choose a pot slightly larger than the current one, and gently transfer the plant, keeping the roots intact.</div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="question">Why are gnats flying around my plant?</div>
+                <div class="answer">Gnats are often attracted to moist soil. Allow the top inch of soil to dry out between waterings to deter them.</div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    
+<div class="team-section">
+    <h2>WHAT SAY CLIENT</h2>
+    <p>Confidently grow in market share. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+    <div class="testimonial-carousel">
+        <div class="testimonial-track">
+            
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/50" alt="Client Photo" class="client-photo">
+                <h3>John Doe</h3>
+                <p>Profession Name</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada dolor sit amet.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/50" alt="Client Photo" class="client-photo">
+                <h3>Jane Smith</h3>
+                <p>Profession Name</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada dolor sit amet.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/50" alt="Client Photo" class="client-photo">
+                <h3>Emily Johnson</h3>
+                <p>Profession Name</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada dolor sit amet.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+   
+    <div class="pagination">
+        <span class="bullet active" onclick="showSlide(0)"></span>
+        <span class="bullet" onclick="showSlide(1)"></span>
+        <span class="bullet" onclick="showSlide(2)"></span>
+    </div>
+</div>
+
+
+<h1>Contact Us</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7886.549443918024!2d80.49094679455195!3d8.760202515163115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc15008214a7cd%3A0x436780b002fe062c!2sVavuniya%20Town%2C%20Vavuniya!5e0!3m2!1sen!2slk!4v1731646618317!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<div id="map" style="width:100%;height:400px;"></div>
+
+
+<h2>Contact Form</h2>
+<form id="contactForm" onsubmit="return validateForm()">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" maxlength="15" required>
+    <span id="firstNameError" class="error"></span>
+    <br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" maxlength="15" required>
+    <span id="lastNameError" class="error"></span>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span>
+    <br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" maxlength="10" required>
+    <span id="phoneError" class="error"></span>
+    <br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" minlength="2" maxlength="120" required></textarea>
+    <span id="messageError" class="error"></span>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <p id="formMessage"></p>
+</form>
+
+
+
+
+
+
+   
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <img src="/images/logo.png" alt="PlanTex Logo">
+                <p>Subscribe to our newsletter to stay updated</p>
+                <form id="subscribeForm" onsubmit="return subscribe()">
+                    <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="address-section">
+                <h4>Our Address</h4>
+                <p>Vavunya - 2nd Cross</p>
+                <p>plantex (Head Office) - 4320</p>
+                <p>0772023472</p>
+            </div>
+            <div class="contact-section">
+                <h4>Contact Us</h4>
+                <p>+94772023472</p>
+                <div class="social-icons">
+                    <i class="fa fa-facebook"><img src="/images/facebook.png" alt=""></i>
+                    <i class="fa fa-twitter"><img src="/images/instagram.png" alt=""></i>
+                    <i class="fa fa-instagram"><img src="/images/twitter.png" alt=""></i>
+                </div>
+            </div>
+            <div class="credit-cards">
+                <h4>We accept all credit cards</h4>
+                <img src="/images/card1.png" alt="Visa">
+                <img src="/images/card2.png" alt="Mastercard">
+                <img src="/images/card3.png" alt="American Express">
+                <img src="/images/card4.png" alt="Discover">
+            </div>
+        </div>
+        <p class="footer-note">© PlanTex. All rights reserved.</p>
+    </footer>
+
+
+    <script src="/script.js"></script>
+    
+</body>
+</html>

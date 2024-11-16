@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item.active {
+    color: #4CAF50;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.section {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .nav-item {
+    color: #bbbbbb;
+}
+
+.dark-mode .nav-item.active {
+    color: #4CAF50;
+}
+
+
+
+/* Carousel container styling  02*/
+.carousel-container {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f8f2eb; /* Light background color */
+}
+
+/* Slide wrapper */
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slide styling */
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Text section styling */
+.text-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 1.5em;
+    color: #8a8a8a;
+    margin: 0;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.text-content p {
+    color: gray;
+    margin: 10px 0;
+}
+
+.text-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #88d294;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Image styling */
+.carousel-item img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* Main container styling 03 */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Image container styling with zoom effect */
+.image-container {
+    position: relative;
+    width: 50%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 5px solid white;
+    box-sizing: border-box;
+    background-image: url('plant-care.jpg'); /* Same image for overlay */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect to zoom in/out */
+.image-container:hover .main-image {
+    transform: scale(1.1); /* Zoom in main image */
+}
+
+.image-container:hover .image-overlay {
+    transform: scale(0.9); /* Zoom out overlay */
+}
+
+/* Text content styling */
+.text-content {
+    width: 45%;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    color: #333333;
+}
+
+.text-content p {
+    color: #777777;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    margin: 10px 0;
+    color: #555555;
+    font-size: 1em;
+    position: relative;
+    padding-left: 20px;
+}
+
+.text-content ul li::before {
+    content: '✔';
+    color: #88d294;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.shop-now {
+    display: inline-block;
+    margin-top: 20px;
+    color: #88d294;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+/*gallery-Container*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gallery-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.product {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.price {
+    color: green;
+}
+
+
+/*FAQ-Container*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e6f2ed;
+    border-radius: 10px;
+}
+
+.faq-container h2 {
+    color: #1b4332;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.faq-item .question {
+    font-weight: bold;
+    color: #1b4332;
+}
+
+.faq-item .answer {
+    display: none;
+    margin-top: 10px;
+    color: #1b4332;
+}
+
+.faq-item.active {
+    background-color: #1b4332;
+    color: #ffffff;
+}
+
+.faq-item.active .answer {
+    display: block;
+    color: #ffffff;
+}
+
+
+
+
+/*Team-Section*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.team-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #f7f7f7;
+    margin-top: 50px;
+}
+
+.team-section h2 {
+    color: #2d6a4f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.testimonial-carousel {
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 10px;
+}
+
+.client-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bullet {
+    height: 10px;
+    width: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bullet.active {
+    background-color: #2d6a4f;
+}
+
+
+/*Contact*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+#formMessage {
+    font-weight: bold;
+    color: green;
+}
+
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    margin: 10px;
+}
+
+.logo-section img {
+    width: 80px;
+}
+
+.logo-section p, .address-section p, .contact-section p, .footer-note {
+    color: #666;
+    font-size: 0.9em;
+}
+
+input[type="email"] {
+    padding: 8px;
+    width: 70%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    color: #555;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+}
+
+.credit-cards img {
+    width: 40px;
+    margin: 5px;
+}
+
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
